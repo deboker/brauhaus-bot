@@ -155,7 +155,7 @@ button {
   /* Mobile */
 
   .chatbot-conversation-container {
-    height: 50vh;
+    height: 55vh;
     overflow-y: scroll;
     margin: 1em 0;
   }
