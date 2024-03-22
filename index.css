@@ -21,7 +21,7 @@ main {
 /* chatbot elements */
 
 .chatbot-container {
-  background-image: url("images/scrimba-bg.jpeg");
+  background-image: url("images/background-image.jpeg");
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Do not repeat the image */
