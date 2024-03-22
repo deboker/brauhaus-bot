@@ -102,6 +102,12 @@ button {
   padding: 1em;
 }
 
+input[type="text"]:focus,
+button:focus {
+  outline: none; /* Removes the default focus outline */
+  border-color: #01b8ff; /* Sets the border color to blue when the element is focused */
+}
+
 input[type="text"] {
   color: var(--light-text);
   width: 100%;
@@ -118,6 +124,7 @@ button {
 
 .send-btn-icon {
   width: 1rem;
+  display: block;
 }
 
 /* text */
