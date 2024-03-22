@@ -21,7 +21,7 @@ main {
 /* chatbot elements */
 
 .chatbot-container {
-  background-image: url("images/background-image.jpeg");
+  background-image: url("images/background-image.webp");
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -165,6 +165,6 @@ button {
   }
 
   .logo {
-    width: 10rem;
+    width: 12rem;
   }
 }
