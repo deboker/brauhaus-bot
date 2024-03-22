@@ -51,7 +51,7 @@ main {
 }
 
 .chatbot-conversation-container {
-  height: 50vh;
+  height: 30rem;
   overflow-y: scroll;
   margin: 1em 0;
 }
@@ -144,7 +144,7 @@ button {
     width: 15rem;
   }
   .chatbot-conversation-container {
-    height: 50vh;
+    height: 40rem;
     overflow-y: scroll;
     margin: 1em 0;
   }
@@ -162,7 +162,7 @@ button {
   /* Mobile */
 
   .chatbot-conversation-container {
-    height: 55vh;
+    height: 22rem;
     overflow-y: scroll;
     margin: 1em 0;
   }

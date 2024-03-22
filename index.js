@@ -6,14 +6,7 @@ import { combineDocuments } from '/utils/combineDocuments'
 import { RunnablePassthrough, RunnableSequence } from "langchain/schema/runnable"
 import { formatConvHistory } from '/utils/formatConvHistory'
 
-document.querySelectorAll('input[type="text"]').forEach(input => {
-    input.addEventListener('focus', () => {
-      // Timeout to allow the page to adjust before scrolling
-      setTimeout(() => {
-        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }, 300); // Adjust timing as necessary
-    });
-  });
+
   
 
 document.addEventListener('submit', (e) => {
