@@ -6,6 +6,13 @@ import { combineDocuments } from '/utils/combineDocuments'
 import { RunnablePassthrough, RunnableSequence } from "langchain/schema/runnable"
 import { formatConvHistory } from '/utils/formatConvHistory'
 
+document.querySelector('input').addEventListener('focus', function() {
+    document.body.classList.add('keyboard-visible');
+});
+
+document.querySelector('input').addEventListener('blur', function() {
+    document.body.classList.remove('keyboard-visible');
+});
 
   
 
