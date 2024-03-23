@@ -16,7 +16,6 @@ function adjustChatContainerHeight() {
   // Use "window.innerHeight" or a calculated value based on other visible elements to adjust the chat container height.
   chatContainer.style.height = `${window.innerHeight - 150}px`; // Adjust 150 to account for other elements' height.
 }
-
   
 document.addEventListener('submit', (e) => {
     e.preventDefault()
