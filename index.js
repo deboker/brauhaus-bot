@@ -6,16 +6,18 @@ import { combineDocuments } from '/utils/combineDocuments'
 import { RunnablePassthrough, RunnableSequence } from "langchain/schema/runnable"
 import { formatConvHistory } from '/utils/formatConvHistory'
 
-document.querySelector('input').addEventListener('focus', function() {
-    document.body.classList.add('keyboard-visible');
-});
+document.addEventListener('DOMContentLoaded', adjustChatContainerHeight);
+window.addEventListener('resize', adjustChatContainerHeight);
 
-document.querySelector('input').addEventListener('blur', function() {
-    document.body.classList.remove('keyboard-visible');
-});
+function adjustChatContainerHeight() {
+  const chatContainer = document.querySelector('.chatbot-conversation-container');
+  if (!chatContainer) return;
+
+  // Use "window.innerHeight" or a calculated value based on other visible elements to adjust the chat container height.
+  chatContainer.style.height = `${window.innerHeight - 150}px`; // Adjust 150 to account for other elements' height.
+}
 
   
-
 document.addEventListener('submit', (e) => {
     e.preventDefault()
     progressConversation()
