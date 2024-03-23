@@ -17,6 +17,7 @@ function adjustChatContainerHeight() {
   chatContainer.style.height = `${window.innerHeight - 150}px`; // Adjust 150 to account for other elements' height.
 }
   
+
 document.addEventListener('submit', (e) => {
     e.preventDefault()
     progressConversation()
@@ -75,7 +76,18 @@ const convHistory = []
 async function progressConversation() {
     const userInput = document.getElementById('user-input')
     const chatbotConversation = document.getElementById('chatbot-conversation-container')
-    const question = userInput.value
+    const question = userInput.value.trim()
+
+    if (!question) {
+        alert("Please enter a question.");
+        return;
+    }
+
+    if (question.length > 100) { // Adjust according to your needs
+        alert("Your message is too long. Please keep it under 100 characters.");
+        return;
+    }
+
     userInput.value = ''
 
     // add human message
