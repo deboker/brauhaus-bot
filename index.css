@@ -28,8 +28,8 @@ main {
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  min-height: 100%; /* Minimum height to 100% of the viewport height */
-  min-width: 100%; /* Set width to 100% of the viewport width */
+  max-height: 100%; /* Minimum height to 100% of the viewport height */
+  width: 100%; /* Set width to 100% of the viewport width */
   padding: 1em;
   box-sizing: border-box; /* Include padding in the element's total width and height */
   position: absolute; /* Position it absolutely... */
@@ -169,7 +169,7 @@ button {
   /* Mobile */
 
   .chatbot-conversation-container {
-    min-height: 100%;
+    min-height: 80%;
     overflow-y: scroll;
     margin: 1em 0;
   }
