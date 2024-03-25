@@ -154,6 +154,7 @@ button {
     min-height: 40rem;
     overflow-y: scroll;
     margin: 1em 0;
+    padding: 1rem;
   }
 
   .sub-heading {
@@ -172,6 +173,7 @@ button {
     min-height: 80%;
     overflow-y: scroll;
     margin: 1em 0;
+    padding: 1rem;
   }
 
   .speech {
