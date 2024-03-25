@@ -30,7 +30,7 @@ main {
   background-repeat: no-repeat; /* Do not repeat the image */
   max-height: 100%; /* Minimum height to 100% of the viewport height */
   width: 100%; /* Set width to 100% of the viewport width */
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 1rem 5rem 1rem 5rem;
   box-sizing: border-box; /* Include padding in the element's total width and height */
   position: absolute; /* Position it absolutely... */
   top: 0; /* ...at the top... */
@@ -150,11 +150,13 @@ button {
   .logo {
     width: 15rem;
   }
+  .chatbot-container {
+    padding: 1rem;
+  }
   .chatbot-conversation-container {
     min-height: 40rem;
     overflow-y: scroll;
     margin: 1em 0;
-    padding: 1rem;
   }
 
   .sub-heading {
@@ -168,12 +170,14 @@ button {
 
 @media (max-width: 480px) {
   /* Mobile */
+  .chatbot-container {
+    padding: 1rem;
+  }
 
   .chatbot-conversation-container {
     min-height: 80%;
     overflow-y: scroll;
     margin: 1em 0;
-    padding: 1rem;
   }
 
   .speech {
