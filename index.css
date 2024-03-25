@@ -30,7 +30,7 @@ main {
   background-repeat: no-repeat; /* Do not repeat the image */
   max-height: 100%; /* Minimum height to 100% of the viewport height */
   width: 100%; /* Set width to 100% of the viewport width */
-  padding: 1em;
+  padding: 1rem 3rem 1rem 3rem;
   box-sizing: border-box; /* Include padding in the element's total width and height */
   position: absolute; /* Position it absolutely... */
   top: 0; /* ...at the top... */
